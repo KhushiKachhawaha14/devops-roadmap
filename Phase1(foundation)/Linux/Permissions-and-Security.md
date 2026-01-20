@@ -81,9 +81,9 @@ sudo chown -R www-data:www-data /var/www/html
 
 - umask 022: For Standard Deployments.
 
-## 🏗️ Real-Life DevOps Use Cases1.
+## 🏗️ Real-Life DevOps Use Cases
 
-**The "Jenkins/GitHub Actions" Pipeline**
+## 1.The "Jenkins/GitHub Actions" Pipeline
 When a CI/CD tool like Jenkins tries to deploy code to a server, it runs as a specific user (usually jenkins).
 
 - The Conflict: If your web folder (/var/www/html) is owned by root, Jenkins won't be able to copy the new code there.
