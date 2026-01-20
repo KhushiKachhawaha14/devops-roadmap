@@ -54,6 +54,14 @@ To swap versions instantly without stopping the service, use an atomic symlink u
 # Force-create a symbolic link pointing to the new version
 ln -sfn /opt/app_v2.1 /opt/app_current
 ```
+### 🛠️ DevOps Use Case: "The Immutable Backup" (Deduplication)
+The Scenario:
+You have a "Last Night" backup and you want to create a "Tonight" backup. Instead of copying everything, you link the files that haven't changed.
+```bash
+# Create a new backup where every file is a hard link to the previous backup
+# This uses NO extra disk space for files that are identical!
+cp -al /backups/monday /backups/tuesday
+```
 
 ## 4. Named Pipes (FIFOs) & File Descriptors
 A Named Pipe (p) acts as a "tunnel." In DevOps, we use them for Log Shifting or Sidecar Communication. By using File Descriptors (FD), we keep the pipe "warm" to prevent the consumer process from exiting prematurely.
@@ -94,4 +102,5 @@ rm log-pipe
 - The "Ghost File" Fix: Use lsof +L1 or lsof | grep deleted to find deleted files that are still consuming disk space because a process is holding them open.
 
 - Descriptor Safety: Always explicitly close your File Descriptors (exec 3>&-) in scripts to avoid resource leaks
+
 
