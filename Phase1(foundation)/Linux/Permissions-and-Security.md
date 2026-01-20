@@ -122,4 +122,6 @@ Answer: Check the Execute (x) bit. Even if they can read (r) the file, they cann
 
 ### Q4: If the umask is 027, what are the default permissions for a new directory?
 
-Answer: \* Max Directory Permission is 777.$777 - 027 = 750$.Result: User has full access (7), Group can Read/Execute (5), Others have nothing (0).
+Answer: *Max Directory Permission is 777.
+- 777 - 027 = 750.
+- Result: User has full access (7), Group can Read/Execute (5), Others have nothing (0).
