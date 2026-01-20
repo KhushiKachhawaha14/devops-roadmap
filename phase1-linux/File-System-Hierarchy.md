@@ -1,7 +1,9 @@
 # 🐧 Linux Filesystem Hierarchy for DevOps
-In DevOps, the Filesystem Hierarchy Standard (FHS) is the "map" of your infrastructure. Knowing these directories is essential for effective automation, troubleshooting, and deployment.
+> **In DevOps, the Filesystem Hierarchy Standard (FHS) is the "map" of your infrastructure. Knowing these directories is essential for effective automation, troubleshooting, and deployment.**
 
-## 🛠️ Core Directories & DevOps Use Cases
+
+
+## *🛠️ Core Directories & DevOps Use Cases*
 
 ### 1. /etc — The Configuration Hub
    The brain of the system, containing all system-wide configuration files.
