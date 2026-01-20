@@ -50,3 +50,4 @@ Why: Useful for storing temporary build artifacts during CI/CD jobs.
 Why: Critical for performance tuning and deep container debugging.
 
 How: Use sysctl to tweak kernel parameters (e.g., network limits, memory management) which interact with /proc/sys.
+(sysctl is the tool used to view and modify kernel parameters at runtime)
