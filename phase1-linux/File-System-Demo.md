@@ -1,10 +1,12 @@
-🐧 Linux Hands-on: New Server Setup Task
+# 🐧 Linux Hands-on: New Server Setup Task
+
+
 This guide documents the essential first steps a DevOps Engineer takes when provisioning a new Linux server. It covers Performance Tuning, Custom Tooling, and System Observability.
 
-🛠️ The Mission
+## 🛠️ The Mission
 As a DevOps Engineer, your goal is to prepare a fresh server for production by completing three core objectives: Tune it, Tool it, and Secure it.
 
-1. Tuning the "Engine" (Kernel Limits)
+#### 1. Tuning the "Engine" (Kernel Limits)
 Directory: /proc
 
 Concept: The /proc directory is a virtual filesystem that acts as an interface to the Linux Kernel. It exists in memory (RAM) rather than on the physical disk.
@@ -19,7 +21,7 @@ cat /proc/sys/fs/file-max
 ```
 DevOps Context: High-traffic applications (like Nginx or Databases) require many open file descriptors. If the request volume exceeds this kernel limit, the application will crash. We check this to ensure our infrastructure can scale.
 
-2. Adding a "Power Tool" (Global Automation)
+#### 2. Adding a "Power Tool" (Global Automation)
 Directory: /usr/local/bin
 
 Concept: While /bin holds standard system commands, /usr/local/bin is the designated home for custom, user-created scripts that need to be accessible globally.
@@ -41,7 +43,7 @@ sudo mv space /usr/local/bin/
 ```
 The Result: You can now type space from any directory in the terminal to see disk utilization. This demonstrates how we standardize tools across an entire fleet of servers.
 
-3. Investigating the "Paper Trail" (Log Analysis)
+#### 3. Investigating the "Paper Trail" (Log Analysis)
 Directory: /var/log
 
 Concept: The /var directory contains "Variable" data. /var/log is the "Black Box" of the server, recording every system event and error.
