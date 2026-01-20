@@ -1,7 +1,7 @@
 # 🐧 Linux Hands-on: New Server Setup Task
 
 
-This guide documents the essential first steps a DevOps Engineer takes when provisioning a new Linux server. It covers Performance Tuning, Custom Tooling, and System Observability.
+> **This guide documents the essential first steps a DevOps Engineer takes when provisioning a new Linux server. It covers Performance Tuning, Custom Tooling, and System Observability.**
 
 ## 🛠️ The Mission
 As a DevOps Engineer, your goal is to prepare a fresh server for production by completing three core objectives: Tune it, Tool it, and Secure it.
@@ -62,4 +62,11 @@ tail -f /var/log/syslog
 ```
 DevOps Context: When a deployment fails or a developer cannot connect via SSH, this is the first place we look to diagnose the "Why."
 
-![💡 Quick Summary for your Cheat Sheet](./images/cheat-sheet.png)
+## 💡 Quick Summary Cheat Sheet
+
+| Room (Folder) | Use Case | DevOps Context |
+| :--- | :--- | :--- |
+| **`/etc`** | The "Settings" folder | Where you configure Nginx, Docker, or system services. |
+| **`/var/log`** | The "History" folder | The primary location for troubleshooting and log analysis. |
+| **`/usr/local/bin`** | The "Toolbox" | Where custom automation and third-party scripts are stored. |
+| **`/proc`** | The "Dashboard" | A virtual interface to check live Kernel, CPU, and RAM stats. |
