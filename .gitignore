@@ -1,0 +1,24 @@
+# Windows system files
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# Text editor / IDE files
+.vscode/
+.idea/
+*.swp
+
+# OS generated files (Mac/Linux)
+.DS_Store
+.directory
+
+# DevOps specific: Local Logs & Temp files
+*.log
+/tmp/
+/temp/
+
+# Sensitive data (NEVER push these!)
+.env
+*.pem
+*.key
+/secrets/
