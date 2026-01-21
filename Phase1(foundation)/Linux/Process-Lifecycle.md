@@ -3,6 +3,7 @@
 In Linux, a new process is almost never created from scratch. Instead, it is **cloned** and then **transformed**.
 
 **The Two-Step Birth**:
+
 **1 fork() (The Clone)**: An existing process **(the Parent)** creates an exact duplicate of itself called the Child. They share the same code and open files at first, but have different PIDs (Process IDs).
 
 **2 exec() (The Transformation)**: The Child process calls exec() to wipe its current memory and load a **new program** (like nginx or python)
