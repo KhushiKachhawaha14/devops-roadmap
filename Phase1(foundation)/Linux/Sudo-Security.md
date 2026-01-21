@@ -49,10 +49,10 @@ Often used for automation scripts (like Jenkins).
 
 # ❓ Interview Questions
 
-Q: Why use visudo instead of nano /etc/sudoers?
+**Q: Why use visudo instead of nano /etc/sudoers?**
 
 - A: visudo performs a syntax check. A single typo in sudoers can break the sudo system for all users, locking everyone out.
 
-Q: What is the difference between sudo -i and sudo -s?
+**Q: What is the difference between sudo -i and sudo -s?**
 
 - A: sudo -i (login shell) provides the root user's environment, while sudo -s (shell) keeps your current user's environment.
